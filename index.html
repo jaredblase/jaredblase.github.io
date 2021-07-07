@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jared Sy">
+    <meta name="keywords" content="portfolio, developer">
+    <meta name="description" content="The developer portfolio of Jared Sy.">
+    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
@@ -167,12 +171,12 @@
                 <p class="title is-2">Extracurriculars</p>
                 <p class="subtitle is-5">Aside from programming, I also devote my time for different school organizations that hone my leadership and communication skills.</p>
 
-                <h3 class="title is-4">Student-Leader</h3>
+                <p class="title is-4">Student-Leader</p>
                 <p class="subtitle is-6">VP for Publicities and Creatives at <a href="https://www.facebook.com/pts.dlsu">DLSU PTS</a></p>
                 <p class="subtitle is-6">AVP for HRD at <a href="https://www.facebook.com/DlsuSPRINT">DLSU SPRINT</a></p>
                 <p class="subtitle is-6">Troop Leader at <a href="https://www.facebook.com/ckscscoutcenter">CKS Scouting</a></p>
                 
-                <h3 class="title is-4">Mentor</h3>
+                <p class="title is-4">Mentor</p>
                 <p class="subtitle is-6">Peer tutor at <a href="https://www.facebook.com/pts.dlsu">DLSU PTS</a></p>
             </div>
         </section>
@@ -194,10 +198,10 @@
 
     <footer class="section has-background-primary-dark has-text-centered">
         <div class="my-6">
-            <a href="https://www.linkedin.com/in/jaredsy/"><i class="fab fa-linkedin fa-2x"></i></a>
-            <a href="https://github.com/jaredblase"><i class="fab fa-github fa-2x"></i></a>
-            <a href="https://www.hackerrank.com/jared_sy"><i class="fab fa-hackerrank fa-2x"></i></a>
-            <a href="https://open.kattis.com/users/varmitz1"><i class="fas fa-cat fa-2x"></i></a>
+            <a href="https://www.linkedin.com/in/jaredsy/" title="LinkedIn"><i class="fab fa-linkedin fa-2x"></i></a>
+            <a href="https://github.com/jaredblase" title="Github"><i class="fab fa-github fa-2x"></i></a>
+            <a href="https://www.hackerrank.com/jared_sy" title="Hackerrank"><i class="fab fa-hackerrank fa-2x"></i></a>
+            <a href="https://open.kattis.com/users/varmitz1" title="Kattis"><i class="fas fa-cat fa-2x"></i></a>
         </div>
 
         <div class="my-6">
@@ -215,7 +219,10 @@
             NodeList.prototype.forEach = Array.prototype.forEach;
         }
 
-        document.querySelectorAll('a[href^="https"]').forEach(elem => elem.target = "_blank");
+        document.querySelectorAll('a[href^="https"]').forEach(elem => {
+            elem.target = "_blank";
+            elem.rel = "noreferrer";
+        });
         document.querySelector('.navbar-burger').addEventListener('click', function() {
             const target = this.dataset.target;
             const $target = document.getElementById(target);
