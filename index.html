@@ -1,1 +1,228 @@
-"Hello World" 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <title>Jared Sy | Portfolio</title>
+
+    <style>
+        .fragment {
+            padding-top: 90px;
+            padding-bottom: 90px;
+        }
+
+        header {
+            box-shadow: 0px -50px 75px;
+        }
+
+        .has-background-primary-dark a {
+            color: white;
+            text-decoration: underline;
+        }
+
+        footer a {
+            margin: 20px;
+            opacity: 50%;
+        }
+
+        footer a:hover {
+            opacity: 75%;
+        }
+
+        .subtitle+.title {
+            margin-top: 20px !important;
+        }
+
+        .subtitle+.subtitle {
+            margin-top: -1.25rem;
+        }
+
+        .subtitle+.columns {
+            margin-top: 50px;
+        }
+
+        .caption {
+            color: rgba(0, 0, 0, 0.75);
+            font-style: italic;
+            font-size: 0.8rem;
+        }
+
+        * {
+            scroll-behavior: smooth;
+        }
+
+        .hero {
+            background: url('hero_bg.jpg') 50% 80% no-repeat;
+            background-size: cover;
+        }
+
+        .navbar-brand a {
+            font-size: large;
+            font-weight: 600;
+            padding-left: 20px;
+        }
+
+        .navbar-brand a:hover, .navbar-brand a:focus-within {
+            color: #4a4a4a;
+        }
+
+        a .box {
+            height: 200px;
+            transition: all .1s ease-in-out;
+        }
+
+        a .box:hover {
+            transform: scale(1.025);
+        }
+
+        #shefhub {
+            width: 729px;
+        }
+
+        .project-links .box {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body class="has-navbar-fixed-top">
+    <header class="navbar is-fixed-top">
+        <div class="navbar-brand">
+            <a class="navbar-item" href='#'>Jared Sy</a>
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="header-menu">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div class="navbar-menu" id="header-menu">
+            <div class="navbar-end">
+                <a href="#about" class="navbar-item">About Me</a>
+                <a href="#skills" class="navbar-item">Skills</a>
+                <a href="#projects" class="navbar-item">Projects</a>
+            </div>
+        </div>
+        
+    </header>
+
+    <section class="hero is-fullheight-with-navbar has-text-centered">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title is-1">Progammer, Student-Leader & Mentor</h1>
+            </div>
+        </div>
+    </section>
+
+    <section class="section fragment has-background-primary-dark" id="about">
+        <div class="container is-max-desktop has-text-centered has-text-light">
+            <h1 class="title has-text-white is-2">About Me</h1>
+            <p>
+                Hi! I'm Jared, a sophomore Computer Science student in <a href="https://dlsu.edu.ph">De La Salle University - Manila.</a>
+                I have experience in web development, object-oriented programming, and database design. I have done a few scripts for myself and my family
+                to automate tasks. As I journey deeper into the world of computers and programming, I also find myself guiding others who are about to begin theirs.
+                I just really love learning things, solving problems, and improving myself while also helping others.
+            </p>
+        </div>
+    </section>
+
+    <section class="section fragment", id="skills">
+        <section class="section columns is-vcentered">
+            <div class="column">
+                <p class="title is-2">Programmer</p>
+                <p class="subtitle is-5">Listed here are the different languages that I feel at home with.</p>
+
+                <p class="title is-4">General Programming</p>
+                <p class="subtitle is-6">C, Java, Python, Kotlin</p>
+
+                <p class="title is-4">Web Development</p>
+                <p class="subtitle is-6">HTML, CSS, JavaScript, PHP</p>
+
+                <p class="title is-4">Database</p>
+                <p class="subtitle is-6">MySQL, MongoDB</p>
+
+                <p class="title is-4">Frameworks and Tools</p>
+                <p class="subtitle is-6">Vue, Github, Bulma, NodeJS</p>
+            </div>
+
+            <div class="column">
+                <img src="programming.png" alt="Programming">
+                <a class="caption" href="https://www.freepik.com/vectors/technology">Technology vector created by freepik - www.freepik.com</a>
+            </div>
+            
+        </section>
+
+        <section class="section columns is-vcentered">
+            <div class="column">
+                <img src="leadership.png" alt="leadership">
+                <a class="caption" href='https://www.freepik.com/vectors/people'>People vector created by pch.vector - www.freepik.com</a>
+            </div>
+
+            <div class="column is-5 is-offset-1">
+                <p class="title is-2">Extracurriculars</p>
+                <p class="subtitle is-5">Aside from programming, I also devote my time for different school organizations that hone my leadership and communication skills.</p>
+
+                <h3 class="title is-4">Student-Leader</h3>
+                <p class="subtitle is-6">VP for Publicities and Creatives at <a href="https://www.facebook.com/pts.dlsu">DLSU PTS</a></p>
+                <p class="subtitle is-6">AVP for HRD at <a href="https://www.facebook.com/DlsuSPRINT">DLSU SPRINT</a></p>
+                <p class="subtitle is-6">Troop Leader at <a href="https://www.facebook.com/ckscscoutcenter">CKS Scouting</a></p>
+                
+                <h3 class="title is-4">Mentor</h3>
+                <p class="subtitle is-6">Peer tutor at <a href="https://www.facebook.com/pts.dlsu">DLSU PTS</a></p>
+            </div>
+        </section>
+    </section>
+
+    <section class="section fragment has-text-centered" id="projects">
+        <p class="title is-2">Past Projects</p>
+        <p class="subtitle is-5">For more samples, please checkout my <a href="https://github.com/jaredblase">Github account</a> or contact me.</p>
+
+        <div class="columns is-centered project-links">
+            <a href="https://shefhub.herokuapp.com/" class="column is-2">
+                <div class="box">
+                    <img src="shefhub.jpg" alt="shefhub" id="shefhub">
+                </div>
+            </a>
+        </div>
+        
+    </section>
+
+    <footer class="section has-background-primary-dark has-text-centered">
+        <div class="my-6">
+            <a href="https://www.linkedin.com/in/jaredsy/"><i class="fab fa-linkedin fa-2x"></i></a>
+            <a href="https://github.com/jaredblase"><i class="fab fa-github fa-2x"></i></a>
+            <a href="https://www.hackerrank.com/jared_sy"><i class="fab fa-hackerrank fa-2x"></i></a>
+            <a href="https://open.kattis.com/users/varmitz1"><i class="fas fa-cat fa-2x"></i></a>
+        </div>
+
+        <div class="my-6">
+            <a href="https://bulma.io/" width="163">
+                <img src="https://bulma.io/images/made-with-bulma--white.png" alt="Made with Bulma" width="163" height="31">
+            </a>
+        </div>
+
+        <a href='https://www.freepik.com/photos/abstract'>Abstract photo (Used as banner) created by freepik - www.freepik.com</a>
+    </footer>
+
+    <script>
+        // polyfill
+        if (window.NodeList && !NodeList.prototype.forEach) {
+            NodeList.prototype.forEach = Array.prototype.forEach;
+        }
+
+        document.querySelectorAll('a[href^="https"]').forEach(elem => elem.target = "_blank");
+        document.querySelector('.navbar-burger').addEventListener('click', function() {
+            const target = this.dataset.target;
+            const $target = document.getElementById(target);
+
+            this.classList.toggle('is-active');
+            $target.classList.toggle('is-active');
+        });
+    </script>
+</body>
+</html>
