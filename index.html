@@ -1,317 +1,345 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Jared Sy">
-    <meta name="keywords" content="portfolio, developer">
-    <meta name="description" content="The developer portfolio of Jared Sy.">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Jared Sy">
+  <meta name="keywords" content="portfolio, developer, Jared Sy, Jared Blase Sy">
+  <meta name="description" content="Hi! I'm Jared, a junior Computer Science student in De La Salle University - Manila. I have experience in web development, object-oriented programming, database design, and software engineering.">
 
-    <link rel="shortcut icon" type="image/jpg" href="favicon.jpg">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <meta name="og:title" content="Jared Sy | Developer Portfolio">
+  <meta name="og:url" content="https://jaredblase.github.io">
+  <meta name="og:type" content="profile">
+  <meta name="og:description" content="Hi! I'm Jared, a junior Computer Science student in De La Salle University - Manila. I have experience in web development, object-oriented programming, database design, and software engineering.">
+  <meta name="og:image" content="https://jaredblase.github.io/og_image.png">
 
-    <title>Jared Sy | Portfolio</title>
+  <meta name="twitter:title" content="Jared Sy | Developer Portfolio">
+  <meta name="twitter:url" content="https://jaredblase.github.io">
+  <meta name="twitter:image" content="https://jaredblase.github.io/og_image.png">
+  <meta name="twitter:description" content="Hi! I'm Jared, a junior Computer Science student in De La Salle University - Manila. I have experience in web development, object-oriented programming, database design, and software engineering.">
 
-    <style>
-        @media(max-width: 767px) {
-            .columns.reverse-stack {
-                flex-direction: column-reverse;
-                display: flex;
-            }
-        }
+  <link rel="shortcut icon" type="image/jpg" href="favicon.jpg">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
-        .fragment {
-            padding-top: 90px;
-            padding-bottom: 90px;
-        }
+  <title>Jared Sy | Developer Portfolio</title>
 
-        header {
-            box-shadow: 0px -50px 75px;
-        }
+  <style>
+    @media(max-width: 767px) {
+      .columns.reverse-stack {
+        flex-direction: column-reverse;
+        display: flex;
+      }
+    }
 
-        .has-background-primary-dark a {
-            color: white;
-            text-decoration: underline;
-        }
+    .fragment {
+      padding-top: 90px;
+      padding-bottom: 90px;
+    }
 
-        footer a {
-            margin: 20px;
-            opacity: 50%;
-        }
+    header {
+      box-shadow: 0px -50px 75px;
+    }
 
-        footer a:hover {
-            opacity: 75%;
-        }
+    .has-background-primary-dark a {
+      color: white;
+      text-decoration: underline;
+    }
 
-        .subtitle+.title {
-            margin-top: 20px !important;
-        }
+    footer a {
+      margin: 20px;
+      opacity: 50%;
+    }
 
-        .subtitle+.subtitle {
-            margin-top: -1.25rem;
-        }
+    footer a:hover {
+      opacity: 75%;
+    }
 
-        .subtitle+.columns {
-            margin-top: 50px;
-        }
+    .subtitle+.title {
+      margin-top: 20px !important;
+    }
 
-        .caption {
-            color: rgba(0, 0, 0, 0.75);
-            font-style: italic;
-            font-size: 0.8rem;
-        }
+    .subtitle+.subtitle {
+      margin-top: -1.25rem;
+    }
 
-        * {
-            scroll-behavior: smooth;
-        }
+    .subtitle+.columns {
+      margin-top: 50px;
+    }
 
-        .hero {
-            background: url('hero_bg.jpg') 50% 80% no-repeat;
-            background-size: cover;
-        }
+    .caption {
+      color: rgba(0, 0, 0, 0.75);
+      font-style: italic;
+      font-size: 0.8rem;
+    }
 
-        .navbar-brand a {
-            font-size: large;
-            font-weight: 600;
-            padding-left: 20px;
-        }
+    * {
+      scroll-behavior: smooth;
+    }
 
-        .navbar-brand a:hover, .navbar-brand a:focus-within {
-            color: #4a4a4a;
-        }
+    .hero {
+      background: url('hero_bg.jpg') 50% 80% no-repeat;
+      background-size: cover;
+    }
 
-        a .box {
-            transition: all .1s ease-in-out;
-        }
+    .navbar-brand a {
+      font-size: large;
+      font-weight: 600;
+      padding-left: 20px;
+    }
 
-        a .box:hover {
-            transform: scale(1.025);
-        }
+    .navbar-brand a:hover,
+    .navbar-brand a:focus-within {
+      color: #4a4a4a;
+    }
 
-        #shefhub {
-            width: 729px;
-        }
+    a .box {
+      transition: all .1s ease-in-out;
+    }
 
-        .project-links .img {
-          height: 90%;
-        }
+    a .box:hover {
+      transform: scale(1.025);
+    }
 
-        .project-links .box {
-            display: flex;
-            justify-content: center;
-            align-content: center;
-            flex-direction: column;
-        }
+    #shefhub {
+      width: 729px;
+    }
 
-        .box.pubs {
-            margin: auto;
-            padding: 0;
-            height: 400px;
-        }
+    .project-links .img {
+      height: 90%;
+    }
 
-        .columns.is-8 .column {
-            margin: auto 2rem;
-            min-width: 317px;
-        }
+    .project-links .box {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      flex-direction: column;
+    }
 
-        #projects .column {
-            min-width: 300px;
-        }
-    </style>
+    .box.pubs {
+      margin: auto;
+      padding: 0;
+      height: 400px;
+    }
+
+    .columns.is-8 .column {
+      margin: auto 2rem;
+      min-width: 317px;
+    }
+
+    #projects .column {
+      min-width: 300px;
+    }
+  </style>
 </head>
+
 <body class="has-navbar-fixed-top">
-    <header class="navbar is-fixed-top">
-        <div class="navbar-brand">
-            <a class="navbar-item" href='#'>Jared Sy</a>
-            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="header-menu">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </a>
-        </div>
-        <div class="navbar-menu" id="header-menu">
-            <div class="navbar-end">
-                <a href="#about" class="navbar-item">About Me</a>
-                <a href="#skills" class="navbar-item">Skills</a>
-                <a href="#projects" class="navbar-item">Projects</a>
-                <a href="#publications" class="navbar-item">Publications</a>
-                <a href="#contact-me" class="navbar-item">Contact Me</a>
-            </div>
-        </div>
-        
-    </header>
+  <header class="navbar is-fixed-top">
+    <div class="navbar-brand">
+      <a class="navbar-item" href='#'>Jared Sy</a>
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="header-menu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div class="navbar-menu" id="header-menu">
+      <div class="navbar-end">
+        <a href="#about" class="navbar-item">About Me</a>
+        <a href="#skills" class="navbar-item">Skills</a>
+        <a href="#projects" class="navbar-item">Projects</a>
+        <a href="#publications" class="navbar-item">Publications</a>
+        <a href="#contact-me" class="navbar-item">Contact Me</a>
+      </div>
+    </div>
 
-    <section class="hero is-fullheight-with-navbar has-text-centered">
-        <div class="hero-body">
-            <div class="container">
-                <h1 class="title is-1">Progammer, Student-Leader & Mentor</h1>
-            </div>
-        </div>
+  </header>
+
+  <section class="hero is-fullheight-with-navbar has-text-centered">
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title is-1">Progammer, Student-Leader & Mentor</h1>
+      </div>
+    </div>
+  </section>
+
+  <section class="section fragment has-background-primary-dark" id="about">
+    <div class="container is-max-desktop has-text-centered has-text-light">
+      <h1 class="title has-text-white is-2">About Me</h1>
+      <p>
+        Hi! I'm Jared, a junior Computer Science student in <a href="https://dlsu.edu.ph">De La Salle University - Manila.</a>
+        I have experience in web development, object-oriented programming, database design, and software engineering. I have done a few
+        scripts for myself, friends, and my family
+        to automate tasks. As I journey deeper into the world of computers and programming, I also find myself guiding
+        others who are about to begin theirs. I just really love learning things, solving problems, and improving myself while also helping others.
+      </p>
+    </div>
+  </section>
+
+  <section class="section fragment" id="skills">
+    <section class="section columns is-vcentered">
+      <div class="column">
+        <p class="title is-2">Technical skills</p>
+        <p class="subtitle is-5">Listed here are the different languages that I feel at home with.</p>
+
+        <p class="title is-4">General Programming</p>
+        <p class="subtitle is-6">C, Java, Python, Kotlin</p>
+
+        <p class="title is-4">Web Development</p>
+        <p class="subtitle is-6">HTML5, CSS3, JavaScript, PHP</p>
+
+        <p class="title is-4">Database</p>
+        <p class="subtitle is-6">MySQL, MongoDB</p>
+
+        <p class="title is-4">Frameworks and Tools</p>
+        <p class="subtitle is-6">Vue, Github, Bulma, NodeJS, Jekyll, Gradle, Android Studio</p>
+      </div>
+
+      <div class="column">
+        <img src="programming.png" alt="Programming">
+        <a class="caption" href="https://www.freepik.com/vectors/technology">Technology vector created by freepik - www.freepik.com</a>
+      </div>
+
     </section>
 
-    <section class="section fragment has-background-primary-dark" id="about">
-        <div class="container is-max-desktop has-text-centered has-text-light">
-            <h1 class="title has-text-white is-2">About Me</h1>
-            <p>
-                Hi! I'm Jared, a sophomore Computer Science student in <a href="https://dlsu.edu.ph">De La Salle University - Manila.</a>
-                I have experience in web development, object-oriented programming, and database design. I have done a few scripts for myself and my family
-                to automate tasks. As I journey deeper into the world of computers and programming, I also find myself guiding others who are about to begin theirs.
-                I just really love learning things, solving problems, and improving myself while also helping others.
-            </p>
-        </div>
+    <section class="section columns is-vcentered reverse-stack">
+      <div class="column">
+        <img src="leadership.png" alt="leadership">
+        <a class="caption" href='https://www.freepik.com/vectors/people'>People vector created by pch.vector - www.freepik.com</a>
+      </div>
+
+      <div class="column is-5 is-offset-1">
+        <p class="title is-2">Extracurriculars</p>
+        <p class="subtitle is-5">Aside from programming, I also devote my time for different school organizations that
+          hone my leadership and communication skills.</p>
+
+        <p class="title is-4">Student-Leader</p>
+        <p class="subtitle is-6">VP for Publicities and Creatives at <a href="https://www.facebook.com/pts.dlsu">DLSU
+            PTS</a></p>
+        <p class="subtitle is-6">AVP for HRD at <a href="https://www.facebook.com/DlsuSPRINT">DLSU SPRINT</a></p>
+        <p class="subtitle is-6">Troop Leader at <a href="https://www.facebook.com/ckscscoutcenter">CKS Scouting</a></p>
+
+        <p class="title is-4">Mentor</p>
+        <p class="subtitle is-6">Peer tutor at <a href="https://www.facebook.com/pts.dlsu">DLSU PTS</a></p>
+      </div>
     </section>
 
-    <section class="section fragment" id="skills">
-        <section class="section columns is-vcentered">
-            <div class="column">
-                <p class="title is-2">Technical skills</p>
-                <p class="subtitle is-5">Listed here are the different languages that I feel at home with.</p>
+    <section class="section columns is-vcentered">
+      <div class="column">
+        <p class="title is-2">Experience</p>
+        <p class="subtitle is-5">Some of the responsibilities that I took.</p>
 
-                <p class="title is-4">General Programming</p>
-                <p class="subtitle is-6">C, Java, Python, Kotlin</p>
+        <p class="title is-4">Work</p>
+        <p class="subtitle is-6">Website maintainer at <a href="https://dlsudatasci.github.io/">Dr. Andrew TanData Science Institute</a></p>
+        <p class="subtitle is-6">Website management member at <a href="https://greengiantfm.com/">Green Giant FM</a></p>
+        <p class="subtitle is-6">Website development team head for <a href="https://www.facebook.com/DLSUARW">ARW 2021</a></p>
+      </div>
 
-                <p class="title is-4">Web Development</p>
-                <p class="subtitle is-6">HTML5, CSS3, JavaScript, PHP</p>
-
-                <p class="title is-4">Database</p>
-                <p class="subtitle is-6">MySQL, MongoDB</p>
-
-                <p class="title is-4">Frameworks and Tools</p>
-                <p class="subtitle is-6">Vue, Github, Bulma, NodeJS, Jekyll, Gradle, Android Studio</p>
-            </div>
-
-            <div class="column">
-                <img src="programming.png" alt="Programming">
-                <a class="caption" href="https://www.freepik.com/vectors/technology">Technology vector created by freepik - www.freepik.com</a>
-            </div>
-            
-        </section>
-
-        <section class="section columns is-vcentered reverse-stack">
-            <div class="column">
-                <img src="leadership.png" alt="leadership">
-                <a class="caption" href='https://www.freepik.com/vectors/people'>People vector created by pch.vector - www.freepik.com</a>
-            </div>
-
-            <div class="column is-5 is-offset-1">
-                <p class="title is-2">Extracurriculars</p>
-                <p class="subtitle is-5">Aside from programming, I also devote my time for different school organizations that hone my leadership and communication skills.</p>
-
-                <p class="title is-4">Student-Leader</p>
-                <p class="subtitle is-6">VP for Publicities and Creatives at <a href="https://www.facebook.com/pts.dlsu">DLSU PTS</a></p>
-                <p class="subtitle is-6">AVP for HRD at <a href="https://www.facebook.com/DlsuSPRINT">DLSU SPRINT</a></p>
-                <p class="subtitle is-6">Troop Leader at <a href="https://www.facebook.com/ckscscoutcenter">CKS Scouting</a></p>
-
-                <p class="title is-4">Mentor</p>
-                <p class="subtitle is-6">Peer tutor at <a href="https://www.facebook.com/pts.dlsu">DLSU PTS</a></p>
-            </div>
-        </section>
-
-        <section class="section columns is-vcentered">
-            <div class="column">
-                <p class="title is-2">Experience</p>
-                <p class="subtitle is-5">Some of the responsibilities that I took.</p>
-
-                <p class="title is-4">Work</p>
-                <p class="subtitle is-6">Website maintainer at <a href="https://dlsudatasci.github.io/people/">Dr. Andrew Tan Data Science Institute</a></p>
-                <p class="subtitle is-6">Website management member at <a href="https://greengiantfm.com/">Green Giant FM</a></p>
-                <p class="subtitle is-6">Website development team head for <a href="https://www.facebook.com/DLSUFWARW">ARW 2021</a></p>
-            </div>
-
-            <div class="column">
-                <img src="experience.jpg" alt="Experience">
-                <a class="caption" href='https://www.freepik.com/vectors/work'>Work vector created by freepik - www.freepik.com</a>
-            </div>
-            
-        </section>
+      <div class="column">
+        <img src="experience.jpg" alt="Experience">
+        <a class="caption" href='https://www.freepik.com/vectors/work'>Work vector created by freepik - www.freepik.com</a>
+      </div>
     </section>
-    
-    <section class="section fragment has-text-centered" id="projects">
-        <p class="title is-2">Past Projects</p>
-        <p class="subtitle is-5">For more samples, please checkout my <a href="https://github.com/jaredblase">Github account</a> or contact me directly.</p>
+  </section>
 
-        <div class="columns is-centered project-links">
-            <a href="https://shefhub.herokuapp.com/" class="column is-2">
-                <div class="box py-6">
-                    <img src="shefhub.jpg" alt="shefhub" id="shefhub">
-                </div>
-            </a>
-            <a href="https://github.com/jaredblase/notegeo" class="column is-2">
-              <div class="box py-6" style="background-color: #0e121b;">
-                  <img src="notegeo.jpg" alt="notegeo" id="notegeo">
-              </div>
-            </a>
+  <section class="section fragment has-text-centered" id="projects">
+    <p class="title is-2">Past Projects</p>
+    <p class="subtitle is-5">For more samples, please checkout my <a href="https://github.com/jaredblase">Github
+        account</a> or contact me directly.</p>
+
+    <div class="columns is-centered project-links">
+      <a href="https://shefhub.herokuapp.com/" class="column is-2">
+        <div class="box py-6">
+          <figure class="image">
+            <img src="shefhub.jpg" alt="shefhub" id="shefhub">
+          </figure>
         </div>
-        
-    </section>
-
-    <section class="section fragment has-text-centered" id="publications">
-        <p class="title is-2">Past Publication Materials</p>
-        <p class="subtitle is-5">Some publication materials I made during my term as VP in PTS.</p>
-
-        <div class="columns is-centered is-8 is-multiline">
-            <a href="https://www.facebook.com/pts.dlsu/posts/10157813227208091" class="column is-2">
-                <img src="Recruitment.png" alt="Recruitment" class="pubs box">
-            </a>
-
-            <a href="https://www.facebook.com/pts.dlsu/posts/10157576918348091" class="column is-2">
-                <img src="Frosh Week.png" alt="Frosh Week" class="pubs box">
-            </a>
-
-            <div class="column is-2">
-                <img src="TB.png" alt="Tutor Balance" class="pubs box">
-            </div>
-
-            <a href="https://www.facebook.com/pts.dlsu/posts/10157786762383091" class="column is-2">
-                <img src="CNY.png" alt="CNY" class="pubs box">
-            </a>
-
-            <div class="column is-2">
-                <img src="WT Recruitment.png" alt="WebTeam Recruitment" class="pubs box">
-            </div>
-
-            <a href="https://www.facebook.com/pts.dlsu/posts/10158077122768091" class="column is-2">
-                <img src="Request.png" alt="Tutor Request" class="pubs box">
-            </a>
+      </a>
+      <a href="https://github.com/jaredblase/notegeo" class="column is-2">
+        <div class="box py-6" style="background-color: #0e121b;">
+          <figure class="image">
+            <img src="notegeo.jpg" alt="notegeo" id="notegeo">
+          </figure>
         </div>
-    </section>
-
-    <footer class="section has-background-primary-dark has-text-centered">
-        <div class="my-6" id="contact-me">
-            <a href="https://www.linkedin.com/in/jaredsy/" title="LinkedIn"><i class="fab fa-linkedin fa-2x"></i></a>
-            <a href="https://github.com/jaredblase" title="Github"><i class="fab fa-github fa-2x"></i></a>
-            <a href="https://www.hackerrank.com/jared_sy" title="Hackerrank"><i class="fab fa-hackerrank fa-2x"></i></a>
-            <a href="https://open.kattis.com/users/varmitz1" title="Kattis"><i class="fas fa-cat fa-2x"></i></a>
+      </a>
+      <a href="https://jaredblase.github.io/arw-2021/" class="column is-2">
+        <div class="box py-6">
+          <figure class="image">
+            <img src="ARW2021.png" alt="DLSU Annual Recruitment Week 2021" style="width: unset; margin: auto">
+          </figure>
         </div>
+      </a>
+    </div>
+  </section>
 
-        <div class="my-6">
-            <a href="https://bulma.io/" width="163">
-                <img src="https://bulma.io/images/made-with-bulma--white.png" alt="Made with Bulma" width="163" height="31">
-            </a>
-        </div>
+  <section class="section fragment has-text-centered" id="publications">
+    <p class="title is-2">Past Publication Materials</p>
+    <p class="subtitle is-5">Some publication materials I made during my term as VP in PTS.</p>
 
-        <a href='https://www.freepik.com/photos/abstract'>Abstract photo (Used as banner) created by freepik - www.freepik.com</a>
-    </footer>
+    <div class="columns is-centered is-8 is-multiline">
+      <a href="https://www.facebook.com/pts.dlsu/posts/10157813227208091" class="column is-2">
+        <img src="Recruitment.png" alt="Recruitment" class="pubs box">
+      </a>
 
-    <script>
-        // polyfill
-        if (window.NodeList && !NodeList.prototype.forEach) {
-            NodeList.prototype.forEach = Array.prototype.forEach;
-        }
+      <a href="https://www.facebook.com/pts.dlsu/posts/10157576918348091" class="column is-2">
+        <img src="Frosh Week.png" alt="Frosh Week" class="pubs box">
+      </a>
 
-        document.querySelectorAll('a[href^="https"]').forEach(elem => {
-            elem.target = "_blank";
-            elem.rel = "noreferrer";
-        });
-        document.querySelector('.navbar-burger').addEventListener('click', function() {
-            const target = this.dataset.target;
-            const $target = document.getElementById(target);
+      <div class="column is-2">
+        <img src="TB.png" alt="Tutor Balance" class="pubs box">
+      </div>
 
-            this.classList.toggle('is-active');
-            $target.classList.toggle('is-active');
-        });
-    </script>
+      <a href="https://www.facebook.com/pts.dlsu/posts/10157786762383091" class="column is-2">
+        <img src="CNY.png" alt="Chinese New Year Pub" class="pubs box">
+      </a>
+
+      <div class="column is-2">
+        <img src="WT Recruitment.png" alt="WebTeam Recruitment" class="pubs box">
+      </div>
+
+      <a href="https://www.facebook.com/pts.dlsu/posts/10158077122768091" class="column is-2">
+        <img src="Request.png" alt="Tutor Request" class="pubs box">
+      </a>
+    </div>
+  </section>
+
+  <footer class="section has-background-primary-dark has-text-centered">
+    <div class="my-6" id="contact-me">
+      <a href="https://www.linkedin.com/in/jaredsy/" title="LinkedIn"><i class="fab fa-linkedin fa-2x"></i></a>
+      <a href="https://github.com/jaredblase" title="Github"><i class="fab fa-github fa-2x"></i></a>
+      <a href="https://www.hackerrank.com/jared_sy" title="Hackerrank"><i class="fab fa-hackerrank fa-2x"></i></a>
+      <a href="https://open.kattis.com/users/varmitz1" title="Kattis"><i class="fas fa-cat fa-2x"></i></a>
+    </div>
+
+    <div class="my-6">
+      <a href="https://bulma.io/" width="163">
+        <img src="https://bulma.io/images/made-with-bulma--white.png" alt="Made with Bulma" width="163" height="31">
+      </a>
+    </div>
+
+    <a href='https://www.freepik.com/photos/abstract'>Abstract photo (Used as banner) created by freepik - www.freepik.com</a>
+  </footer>
+
+  <script>
+    // polyfill
+    if (window.NodeList && !NodeList.prototype.forEach) {
+      NodeList.prototype.forEach = Array.prototype.forEach;
+    }
+
+    document.querySelectorAll('a[href^="https"]').forEach(elem => {
+      elem.target = "_blank";
+      elem.rel = "noreferrer";
+    });
+    document.querySelector('.navbar-burger').addEventListener('click', function () {
+      const target = this.dataset.target;
+      const $target = document.getElementById(target);
+
+      this.classList.toggle('is-active');
+      $target.classList.toggle('is-active');
+    });
+  </script>
 </body>
+
 </html>
