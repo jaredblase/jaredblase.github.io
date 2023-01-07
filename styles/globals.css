@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+	@apply scroll-smooth;
+}
+
+body {
+	@apply text-black scroll-smooth;
+}
+
+section[id] {
+	@apply py-28;
+}
+
+header nav a {
+	@apply flex items-center hover:text-blue-700 hover:bg-gray-100 transition-colors active:text-blue-800 px-3;
+}
+
+a:not(header a) {
+	@apply text-blue-600 hover:text-blue-700 active:text-blue-800;
+}
+
+h2 {
+	@apply text-4xl font-semibold mb-4;
+}
+
+h2+.subtitle {
+	@apply text-xl -mt-3 mb-8;
+}
+
+.bg-primary p a {
+	@apply text-white underline hover:text-gray-200 transition-colors
+}
+
+#contact a svg {
+	@apply w-8 fill-white;
+}
+
+#skills article>ol {
+	@apply grid gap-y-4 [&ol]:space-y-2;
+}
+
+#skills .list-title {
+	@apply font-semibold text-2xl mb-0.5;
+}
+
+#skills figure a {
+	@apply italic text-black opacity-80 hover:opacity-100 transition-opacity text-xs block leading-5
+}
+
+.container {
+	@apply mx-auto px-6 xl:px-8 2xl:px-16;
+}
