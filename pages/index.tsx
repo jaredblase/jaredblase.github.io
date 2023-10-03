@@ -51,7 +51,6 @@ export default function Home() {
 						className="grid absolute sm:hidden transition-transform
 						data-[show=false]:hidden bg-white w-full left-0 top-14 children:py-2"
 					>
-
 						<a href="#about">About Me</a>
 						<a href="#skills">Skills</a>
 						<a href="#projects">Projects</a>
@@ -63,7 +62,7 @@ export default function Home() {
 			<main className="pt-14">
 				<section className="min-h-screen-w-header relative grid place-items-center">
 					<Image src={HeroImage} alt="Brown minimalist background with wooden object" fill className="object-cover object-bottom" priority={true} />
-					<h1 className="z-0 text-3xl sm:text-5xl font-semibold text-center container">Progammer, Student-Leader & Mentor</h1>
+					<h1 className="z-0 text-3xl sm:text-5xl font-semibold text-center container">Programmer, Student-Leader & Mentor</h1>
 				</section>
 				<section className="bg-primary text-white" id="about">
 					<article className="container text-center">

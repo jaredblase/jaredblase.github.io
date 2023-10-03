@@ -7,6 +7,16 @@ type Project = {
 
 export const projects: Project[] = [
 	{
+		title: 'CitiWorld',
+		src: '/images/logos/citiworld.png',
+		link: 'https://citiworld.vercel.app/',
+	},
+	{
+		title: 'Abstract',
+		src: '/images/logos/abstract.png',
+		link: 'https://jaredblase.github.io/abstract-machine-interpreter/',
+	},
+	{
 		title: 'Green Giant FM',
 		src: '/images/logos/ggfm.avif',
 		link: 'https://greengiantfm.com',
@@ -19,7 +29,7 @@ export const projects: Project[] = [
 	{
 		title: 'Peer Tutor Society',
 		src: '/images/logos/pts.avif',
-		link: 'https://dlsu.vercel.app',
+		link: 'https://dlsupts.vercel.app',
 	},
 	{
 		title: 'ARW',

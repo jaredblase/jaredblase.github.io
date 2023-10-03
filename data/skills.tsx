@@ -15,15 +15,15 @@ export const technicalSkills: TechnicalSkill[] = [
 	},
 	{
 		title: 'JavsaScript Frameworks',
-		items: ['Express', 'React', 'NextJS']
+		items: ['Express', 'React', 'NextJS', 'Svelte']
 	},
 	{
 		title: 'Database',
 		items: ['MySQL', 'MongoDB'],
 	},
 	{
-		title: 'Tools',
-		items: ['GitHub', 'Android Studio', 'Jekyll']
+		title: 'Others',
+		items: ['GitHub', 'Android Studio', 'Jekyll', 'Shopify']
 	},
 ]
 
@@ -93,6 +93,12 @@ export const experiences: Experience[] = [
 		title: 'Web Development',
 		items: [
 			{
+				position: 'Technical Support Specialist',
+				organization: 'The Support Heroes',
+				link: 'https://www.thesupportheroes.com/',
+				startYear: 2023
+			},
+			{
 				position: 'Website development committee',
 				organization: 'DLSU PTS',
 				link: 'https://www.facebook.com/pts.dlsu',
@@ -118,6 +124,7 @@ export const experiences: Experience[] = [
 				organization: 'Green Giant FM',
 				link: 'https://greengiantfm.com',
 				startYear: 2021,
+				endYear: 2023,
 			},
 			{
 				position: 'Website development team head',
