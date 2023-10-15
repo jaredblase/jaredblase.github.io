@@ -14,7 +14,7 @@ export const technicalSkills: TechnicalSkill[] = [
 		items: ['Sass', 'TailwindCSS', 'Bulma']
 	},
 	{
-		title: 'JavsaScript Frameworks',
+		title: 'JavaScript Frameworks',
 		items: ['Express', 'React', 'NextJS', 'Svelte']
 	},
 	{
