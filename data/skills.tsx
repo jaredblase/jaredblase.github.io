@@ -23,7 +23,7 @@ export const technicalSkills: TechnicalSkill[] = [
 	},
 	{
 		title: 'Others',
-		items: ['GitHub', 'Android Studio', 'Jekyll', 'Shopify']
+		items: ['GitHub', 'Android Studio', 'Jekyll', 'Shopify', 'Docker']
 	},
 ]
 

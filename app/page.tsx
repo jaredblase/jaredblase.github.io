@@ -19,7 +19,7 @@ export default function Home() {
 				<article className="container text-center">
 					<h2>About Me</h2>
 					<p className="max-w-prose mx-auto text-lg">
-						Hi! I&apos;m Jared, a senior Computer Science student in <a href="https://www.dlsu.edu.ph">De La Salle University - Manila</a>.
+						Hi! I&apos;m Jared, a student taking up Masters in Computer Science at <a href="https://www.dlsu.edu.ph">De La Salle University - Manila</a>.
 						I have experience in web development, object-oriented programming, database design, and software engineering.
 						I have done a few scripts for myself, friends, and my family to automate tasks. As I journey deeper into the world of computers and programming,
 						I also find myself guiding others who are about to begin theirs. I just really love learning things, solving problems,
@@ -50,7 +50,7 @@ export default function Home() {
 						<a href="https://www.freepik.com/vectors/people" target="_blank" rel="noreferrer">People vector created by pch.vector - www.freepik.com</a>
 					</figure>
 					<article className="order-3 sm:order-4">
-						<h2>Extracurriculars</h2>
+						<h2>Extracurricular</h2>
 						<p className="subtitle">Aside from programming, I also devote my time to different school organizations that hone my leadership and communication skills.</p>
 						<ol>
 							{extracurriculars.map(e =>
