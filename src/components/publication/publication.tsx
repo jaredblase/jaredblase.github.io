@@ -1,4 +1,4 @@
-import { Publication } from '@data/publications'
+import { type  Publication } from '@/data/publications'
 import Image from 'next/image'
 
 export function Publication({ title, src, link }: Publication) {

@@ -1,12 +1,12 @@
 import Image from 'next/image'
-import { experiences, extracurriculars, technicalSkills } from '@data/skills'
-import { projects } from '@data/projects'
-import { publications } from '@data/publications'
-import { Publication } from '@components/publication'
-import HeroImage from '@public/images/hero-bg.avif'
-import ProgrammingImage from '@public/images/programming.avif'
-import LeadershipImage from '@public/images/leadership.avif'
-import ExperienceImage from '@public/images/experience.avif'
+import { experiences, extracurriculars, technicalSkills } from '@/data/skills'
+import { projects } from '@/data/projects'
+import { publications } from '@/data/publications'
+import { Publication } from '@/components/publication'
+import HeroImage from '^/images/hero-bg.avif'
+import ProgrammingImage from '^/images/programming.avif'
+import LeadershipImage from '^/images/leadership.avif'
+import ExperienceImage from '^/images/experience.avif'
 
 export default function Home() {
 	return (
