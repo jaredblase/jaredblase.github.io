@@ -14,6 +14,12 @@ const config: Config = {
 			},
 			minHeight: {
 				'screen-w-header': `calc(100vh - 3.5rem)`
+			},
+			animation: {
+				cursor: 'pulse 1s cubic-bezier(0.4, 0, 0.6, 1) infinite'
+			},
+			fontFamily: {
+				mono: ['var(--font-ibm-mono)']
 			}
 		},
   },
