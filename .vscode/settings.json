@@ -1,5 +1,7 @@
 {
 	"files.associations": {
-		"*.css": "postcss",
-	}
+		"*.css": "postcss"
+	},
+	"editor.formatOnSave": true,
+	"editor.defaultFormatter": "esbenp.prettier-vscode"
 }
