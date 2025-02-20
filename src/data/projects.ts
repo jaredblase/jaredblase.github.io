@@ -40,6 +40,6 @@ export const projects: Project[] = [
 		title: 'NoteGeo',
 		src: '/images/logos/notegeo.avif',
 		link: 'https://github.com/jaredblase/notegeo',
-		bgColor: '#0e121a'
-	}
+		bgColor: '#0e121a',
+	},
 ]

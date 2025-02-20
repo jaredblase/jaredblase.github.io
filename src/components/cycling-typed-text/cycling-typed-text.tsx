@@ -7,7 +7,11 @@ type CyclingTypedTextProps = {
 	wait_ms?: number
 }
 
-export function CyclingTypedText({ texts, type_ms, wait_ms }: CyclingTypedTextProps) {
+export function CyclingTypedText({
+	texts,
+	type_ms,
+	wait_ms,
+}: CyclingTypedTextProps) {
 	const [text, setText] = useState('')
 	const [idx, setIdx] = useState(0)
 	const [increasing, setIncreasing] = useState(true)
@@ -17,7 +21,10 @@ export function CyclingTypedText({ texts, type_ms, wait_ms }: CyclingTypedTextPr
 	useEffect(() => {
 		if (increasing && text.length == texts[idx].length) {
 			setIncreasing(false)
-			setTimeout(() => setText(texts[idx].substring(0, text.length-1)), wait_ms)
+			setTimeout(
+				() => setText(texts[idx].substring(0, text.length - 1)),
+				wait_ms
+			)
 			return
 		}
 
@@ -28,8 +35,12 @@ export function CyclingTypedText({ texts, type_ms, wait_ms }: CyclingTypedTextPr
 			setTimeout(() => setText(texts[i].substring(0, 1)), wait_ms)
 			return
 		}
-	
-		setTimeout(() => setText(texts[idx].substring(0, text.length + (increasing ? 1 : -1))), type_ms)
+
+		setTimeout(
+			() =>
+				setText(texts[idx].substring(0, text.length + (increasing ? 1 : -1))),
+			type_ms
+		)
 	}, [text])
 
 	return <span className="has-cursor inline-block">{text}</span>
