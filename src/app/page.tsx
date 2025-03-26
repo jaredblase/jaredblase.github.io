@@ -28,7 +28,7 @@ export default function Home() {
           <div className="my-gradient circle absolute bottom-0 right-0 w-64 opacity-75 blur-lg" />
         </div>
       </section>
-      <div className="relative m-auto grid max-w-screen-xl grid-cols-2">
+      <div className="relative m-auto grid max-w-(--breakpoint-xl) grid-cols-2">
         <aside>
           <header className="container sticky top-24 flex h-[80vh] flex-col">
             <article>

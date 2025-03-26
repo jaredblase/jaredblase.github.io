@@ -27,7 +27,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${ibmMono.variable}`}>
       <body>
-        <header className="sticky h-16 bg-gradient-to-b from-white to-transparent top-0 z-10" />
+        <header className="sticky h-16 bg-linear-to-b from-white to-transparent top-0 z-10" />
         {children}
       </body>
     </html>
